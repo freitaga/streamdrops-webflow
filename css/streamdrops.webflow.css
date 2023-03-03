@@ -18,6 +18,14 @@
   width: 250px;
 }
 
+.supercharge-flex {
+  display: flex;
+}
+
+.supercharge-column {
+  width: 50%;
+}
+
 .hero-block {
   display: -webkit-box;
   display: -webkit-flex;
@@ -148,11 +156,11 @@
 .paragraph-hero {
   max-width: 490px;
   font-family: 'Open Sans', sans-serif;
-  color: #e0e0e0;
+  color: #f2f2f2;
   font-size: 18px;
   line-height: 1.4;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .mobile-button-link {
@@ -189,6 +197,8 @@
   -ms-flex-align: center;
   align-items: center;
   background-image: radial-gradient(circle farthest-corner at 50% 50%, #171717, #00052b 9%, #171717 68%, #171717 83%, #171717);
+  /* background-image: url("https://i.imgur.com/cdLf1cm.png"); */
+  background-size: cover;
 }
 
 .title-wrap-horizontal {
@@ -1741,6 +1751,7 @@
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
+
   }
 
   .dropdown-link {
@@ -2033,6 +2044,16 @@
 }
 
 @media screen and (max-width: 767px) {
+  .supercharge-column {
+    width: 100%;
+  }
+
+  .supercharge-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
   .navigation-link-wrap {
     display: none;
   }
@@ -2179,6 +2200,7 @@
 }
 
 @media screen and (max-width: 479px) {
+
   .button-wrap-hero {
     display: -webkit-box;
     display: -webkit-flex;
